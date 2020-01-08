@@ -50,10 +50,27 @@ const sample: number[] = [5, 1, 2, 3, 0, 1, 5, 0, 2];
 
 console.log( houseNumbersSum(sample));
  */
-// const factorial = (n: number): number => Array(n).fill(1).reduce((a: number, c: number, i: number) => a * (c + i) , 1 );
-const factorial = (n) => n > 1 ? n * factorial(n - 1) : 1;
+/*
+const factorial = (n: number): number => Array(n).fill(1).reduce((a: number, c: number, i: number) => a * (c + i) , 1 );
+const factorialRec = (n: number): number => n > 1 ? n * factorial(n-1) : 1;
+
 console.log(factorial(0));
 console.log(factorial(1));
 console.log(factorial(4));
 console.log(factorial(7));
 console.log(factorial(17));
+   */
+/*
+//   Given three integers a ,b ,c, return the largest number obtained after inserting the following operators and brackets: +, *, ().
+// The numbers are always positive.
+// The numbers are in the range (1  ≤  a, b, c  ≤  10).
+// You can use the same operation more than once.
+// It's not necessary to place all the signs and brackets.
+// Repetition in numbers may occur .
+// You cannot swap the operands.
+
+const expressionsMatter = (a: number, b: number, c: number): number => Math.max(a+b+c,a*b*c,(a+b)*c,a*(b+c));
+ */
+var reverseWords = function (str) { return str.split(" ").map(function (words) { return words.split("").reverse().join(""); }).join(" "); };
+console.log(reverseWords("double  spaces"));
+// /\s{2,}/

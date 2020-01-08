@@ -60,3 +60,20 @@ console.log(factorial(4));
 console.log(factorial(7));
 console.log(factorial(17));
    */
+/* 
+//   Given three integers a ,b ,c, return the largest number obtained after inserting the following operators and brackets: +, *, (). 
+// The numbers are always positive.
+// The numbers are in the range (1  ≤  a, b, c  ≤  10).
+// You can use the same operation more than once.
+// It's not necessary to place all the signs and brackets.
+// Repetition in numbers may occur .
+// You cannot swap the operands.
+
+const expressionsMatter = (a: number, b: number, c: number): number => Math.max(a+b+c,a*b*c,(a+b)*c,a*(b+c));
+ */
+
+// Complete the function that accepts a string parameter, and reverses each word in the string. All spaces in the string should be retained.
+
+const reverseWords = (str: string): string => str.split(" ").map(words => words.split("").reverse().join("")).join(" ");
+
+console.log(reverseWords("double  spaces"));
